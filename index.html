@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"> <!--meta-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Oye! Cafe</title> <!--Title of webpage-->
+        <!--Webpage icon link-->
+        <link rel="icon" href="logo/logo-black.png" type="image/png">
+        <!--google fonts link-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css2?family=Anton&family=Comfortaa&family=Lato&family=Lobster&family=Pacifico&family=Permanent+Marker&display=swap">
+        <!--CSS link-->
+        <link rel="stylesheet" type="text/css" href="general.css">
+        <style>
+            /*welcome section*/
+            .welcome{
+                margin-top: 30px;
+                text-align: center;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+            }
+
+            .welcome video{
+                position: relative;
+                width: 80%;
+                border: 5px solid #fffef1;
+                border-radius: 50px;
+                margin: auto;
+            }
+
+            .welcome-content{
+                position: absolute;
+                margin: 0 300px;
+                font-size: 1.4em;
+                color: 	#fefbea;
+                padding: 0 70px;
+                border: 3px solid #fefbea;
+                background-color: #3f40407a;              
+            }
+
+            /*About Us section*/
+            .home-about{
+                margin-top: 80px;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+            }
+
+            .home-about img{
+                width: 900px;
+                height: 500px;
+            }
+
+            .home-about-content{
+                padding: 80px 100px;
+                font-size: 1.3em;
+                color: rgb(63, 78, 71);
+                background-color: #f8ecd2;
+                text-align: center;
+            }
+
+            /*center image section*/
+            .image-centerpg{
+                margin-top: 60px;
+                width: 1460px;
+                height: 600px;
+                border: 5px solid white;
+            }
+
+            /*Our Menu section*/
+            .home-menu{
+                margin-top: 80px;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+            }
+
+            .home-menu img{
+                width: 900px;
+                height: 500px;
+            }
+
+            .home-menu-content{
+                padding: 100px 100px;
+                font-size: 1.3em;
+                color: rgb(63, 78, 71);
+                background-color: 	#f8ecd2;
+                text-align: center;
+            }
+
+            /*Delivery Service section*/
+            .home-service{
+                margin-top: 20px;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+            }
+
+            .home-service img{
+                width: 1000px;
+                height: 450px;
+            }
+
+            .home-service-content{
+                padding: 55px 100px;
+                font-size: 1.3em;
+                color: rgb(63, 78, 71);
+                background-color: #f8ecd2;
+                text-align: center;
+            }
+        </style>   
+    </head>
+
+    <body> <!--Header and Navigation Bar using general CSS (apply to all webpages)-->
+        <header>
+            <a href="index.html"><img src="logo/banner-logo.png" alt="Logo of Oye! Cafe"></a>
+        </header>
+
+        <nav class="navbar">
+            <a class="active" href="index.html"><img src="logo/logo-black.png" alt="Logo"></a>
+            <a class="nav-word" href="aboutus.html">About Us</a>
+            <a class="nav-word" href="menu.html">Menu</a>
+            <a class="nav-word" href="services.html">Services</a>
+            <a class="nav-word" href="contactus.html">Contact Us</a>
+        </nav>
+
+        <main> <!--Main Content of home page giving brief description of our cafe-->
+            <div class="welcome"> <!--Welcome section-->
+                <video autoplay muted loop>
+                    <source src="https://media.istockphoto.com/id/1185014628/video/crunchy-fresh-croissants-raspberries-blackberries-blueberry-and-melissa-sprinkled-with.mp4?s=mp4-640x640-is&k=20&c=yVsSKkJm1I4LIWnnfJ4Lv99wYPVXMKuk4EuOlNNrx08=" type="video/mp4">
+                </video>
+                <div class="welcome-content">
+                    <h1 style="font-family: Lobster;">Welcome</h1>
+                    <p style="font-family: Comfortaa, 'Times New Roman', serif;">The world's most magneficent combination of caffiene and sugar.
+                        When consumed daily, known to regulate mood and increase joy.<br><strong>- Oye! Cafe</strong></p>
+                </div>
+            </div>
+
+            <div class="home-about"> <!--About Us section-->
+                <div class="home-about-content">
+                    <h2 style="font-family: Lobster;">About us</h2>
+                    <p style="font-family: Comfortaa;">Oye! Cafe is a lively dining spot in Malaysia.<br> We use the best ingredients and provide a great atmosphere.<br>Our cafe was founded with the belief that coffee is not just a beverage, but a way of life.</p>
+                    <button class="button" onclick="document.location='aboutus.html'">See More</button>
+                </div>
+                <img src="image/CafeBar.jpg" alt="Cafe Bar Image">
+            </div>
+
+            <img class="image-centerpg" src="image/CafeDessert.jpg" alt="Dessert">
+
+            <div class="home-menu"> <!--Our Menu section-->
+                <img src="image/IceFlakes.jpg" alt="Ice Flakes">
+                <div class="home-menu-content">
+                    <h2 style="font-family: Lobster;">Our Menu</h2>
+                    <p style="font-family: Comfortaa;">Oye! Cafe, where we take great pride in serving a delicious selection of food and beverages that are made with the highest quality ingredients.</p>
+                    <button class="button" onclick="document.location='menu.html'">Check Now !</button>
+                </div>
+            </div>
+
+            <div class="home-service"> <!--Delivery Service section-->  
+                <div class="home-service-content">
+                    <h2 style="font-family: Lobster;">Delivery</h2>
+                    <p style="font-family: Comfortaa;">Our delivery service is designed to be fast and reliable, with orders typically arrived within a timely manner.</p>
+                    <button class="button" onclick="document.location='delivery.html'">Order Now !</button>
+                </div>
+                <img src="image/Toast.png" alt="Bread">
+            </div>
+
+            <audio autoplay loop> <!--Background music-->
+                <source src="EarlybirdAudio.mp3" type="audio/mpeg">
+            </audio>
+        </main>
+
+        <footer> <!--Footer that using general CSS-->
+            <div class="social-media">
+                <p>Follow us on:</p>
+                <a href="https://twitter.com/OyeCafeIndia"><img src="logo/twitter.svg" alt="twitter icon"></a>
+                <a href="https://www.facebook.com/oye.cafe22/"><img src="logo/facebook.svg" alt="facebook icon"></a>
+                <a href="https://www.instagram.com/oyecafe/"><img src="logo/instagram.svg" alt="instagram icon"></a>
+            </div>
+            <p class="copyright">Copyright &copy; 2023 by Oye! Cafe Sdn Bhd. 24312314 (41244-X) All Rights Reserved.</p>
+            <p class="contact">Connect With Us!<br>
+                <a href='mailto:oyecafe@gmail.com'>oyecafe@gmail.com</a>
+                <br><a href="tel:011-12345678">(+60)11-12345678</a></p>
+        </footer>
+    </body>
+</html>

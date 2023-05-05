@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"> <!--meta-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Oye! Cafe- Services</title> <!--Title of webpage-->
+        <!--Webpage icon link-->
+        <link rel="icon" href="logo/logo-black.png" type="image/png">
+        <!--google fonts link-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Anton&family=Comfortaa&family=Lato&family=Lobster&family=Pacifico&family=Permanent+Marker&display=swap" rel="stylesheet">
+        <!--CSS link-->
+        <link rel="stylesheet" href="general.css">
+        <style>
+            .container {
+                margin-top: 80px;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                border: 5px dashed #8f654b;
+                background-color: #f8ecd2;
+                color: #75492e;
+            }
+
+            .container img {
+                width: 790px;
+                height: 390px;
+            }
+
+            .container-content {
+                padding: 60px 100px;
+                text-align: center;
+                font-size: 1.3em;
+            }
+        </style>
+    </head>
+
+    <body>
+        <header> <!--Header and Navigation Bar using general CSS (apply to all webpages)-->
+            <a href="index.html"><img src="logo/banner-logo.png" alt="Logo of Oye! Cafe"></a>
+        </header>
+
+        <nav class="navbar">
+            <a href="index.html"><img src="logo/logo-black.png" alt="Logo"></a>
+            <a class="nav-word" href="aboutus.html">About Us</a>
+            <a class="nav-word" href="menu.html">Menu</a>
+            <a class="nav-word active" href="services.html">Services</a>
+            <a class="nav-word" href="contactus.html">Contact Us</a>
+        </nav>
+
+        <main>
+            <div class="container"> <!--Online Reservation section-->
+                <img src="image/reservation.jpeg" alt="Reservation of Table">
+                <div class="container-content">
+                    <h2 style="font-family: Lobster;">Online Reservation</h2>
+                    <p style="font-family: Comfortaa;">Want to gather with your family and friends at Oye! Cafe? Book your place and make a reservation with just a few clicks on our site now!</p>
+                    <button class="button" onclick="document.location='reservation.html'">Book Now !</button>
+                </div>
+            </div>
+
+            <div class="container"> <!--Delivery section-->
+                <div class="container-content">
+                    <h2 style="font-family: Lobster;">Delivery Service</h2>
+                    <p style="font-family: Comfortaa;">Just a call and we will be on our way to send the loveliness of our food right to your door step. We&rsquo;ll make sure the food is still warm and properly packaged.</p>
+                    <button class="button" onclick="document.location='delivery.html'">Order Now</button>
+                </div>
+                <img src="image/delivery.jpg" alt="Food Delivery">
+            </div>
+
+            <audio autoplay loop> <!--Background music-->
+                <source src="EarlybirdAudio.mp3" type="audio/mpeg">
+            </audio>
+        </main>
+
+        <footer> <!--Footer that using general CSS-->
+            <div class="social-media">
+                <p>Follow us on:</p>
+                <a href="https://twitter.com/OyeCafeIndia"><img src="logo/twitter.svg" alt="twitter icon"></a>
+                <a href="https://www.facebook.com/oye.cafe22/"><img src="logo/facebook.svg" alt="facebook icon"></a>
+                <a href="https://www.instagram.com/oyecafe/"><img src="logo/instagram.svg" alt="instagram icon"></a>
+            </div>
+            <p class="copyright">Copyright &copy; 2023 by Oye! Cafe Sdn Bhd. 24312314 (41244-X) All Rights Reserved.</p>
+            <p class="contact">Connect With Us!<br>
+                <a href='mailto:oyecafe@gmail.com'>oyecafe@gmail.com</a>
+                <br><a href="tel:011-12345678">(+60)11-12345678</a></p>
+        </footer>
+    </body>
+</html>

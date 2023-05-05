@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"> <!--meta-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Oye! Cafe- Services</title> <!--Title of webpage-->
+        <!--Webpage icon link-->
+        <link rel="icon" href="logo/logo-black.png" type="image/png">
+        <!--google fonts link-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Anton&family=Comfortaa&family=Lato&family=Lobster&family=Pacifico&family=Permanent+Marker&display=swap" rel="stylesheet">
+        <!--CSS link-->
+        <link rel="stylesheet" href="general.css">
+        <style>
+            .delivery {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+            }
+
+            .container {
+                font-size: 1.2em;
+                font-family: Comfortaa, 'Courier New', Courier, monospace;
+                line-height: 30px;
+                margin: 50px 20px;
+            }
+
+            .container h2 {
+                font-family: Pacifico;
+                font-size: 1.7em;
+                font-weight: 200;
+                color: darkslategrey;
+                text-align: center;
+                margin-top: 80px;
+            }
+
+            .container form {
+                text-align: center;
+                width: 650px;
+                display: flex;
+                flex-direction: column;
+                background-image: url(image/BGimage.jpg);
+                border: 5px dashed rgb(66, 103, 103);
+                padding: 30px 20px;
+                text-transform: capitalize;
+                border-radius: 30px;
+            }
+
+            .container form input{
+                padding: 20px 60px;
+                border-radius:20px;
+                border: none;
+                margin: 5px 0px;
+                width: 350px;
+                box-shadow: 4px 4px 3px 0 rgba(0,0,0,0.3);
+                cursor: pointer;
+                text-align: center;
+            }
+
+            .card {
+                display: flex;
+                justify-content: center;
+            }
+
+            .card img{
+                margin: 10px 20px;
+            }
+
+            .btn{
+                margin-top: 20px;
+                font-family: Pacifico,'Times New Roman', serif;
+                font-size: 1.3em;
+                background-color: antiquewhite;
+                padding: 20px 60px;
+                border: none;
+                border-radius: 20px;
+                box-shadow:4px 4px 3px 0 rgba(0,0,0,0.3);
+            }
+        </style>
+    </head>
+
+    <body>
+        <header> <!--Header and Navigation Bar using general CSS (apply to all webpages)-->
+            <a href="index.html"><img src="logo/banner-logo.png" alt="Logo of Oye! Cafe"></a>
+        </header>
+
+        <nav class="navbar">
+            <a href="index.html"><img src="logo/logo-black.png" alt="Logo"></a>
+            <a class="nav-word" href="aboutus.html">About Us</a>
+            <a class="nav-word" href="menu.html">Menu</a>
+            <a class="nav-word" href="services.html">Services</a>
+            <a class="nav-word" href="contactus.html">Contact Us</a>
+        </nav>
+
+        <main>
+            <div class="delivery">
+                <div class="container">
+                    <h2>Delivery Information</h2> <!--Delivery information form-->
+                    <form>
+                        <p>Please fill up the following field with your information correctly. Thanks for your coorperation.</p>
+                        <div>
+                            <label for="name">Name</label><br>
+                            <input type="text" id="name" placeholder="Your Name"><br><br>
+                            <label for="email">Email</label><br>
+                            <input type="email" id="email" placeholder="Your Email"><br><br>
+                            <label for="address">Address</label><br>
+                            <input type="text" id="address" placeholder="room - street - locality"><br><br>
+                            <label for="state">State</label><br>
+                            <input type="text" id="state" placeholder="Kuala Lumpur"><br><br>
+                            <label for="zip">Zip Code</label><br>
+                            <input type="text" id="zip" placeholder="53300"><br><br>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="container">
+                    <h2>Payment</h2> <!--Payment Form-->
+                    <div class="card">
+                        <p>Card accepted: </p>
+                        <img src="image/cardImage.png" alt="card accepted" width="320" height="50">
+                    </div>
+                    <form>
+                        <p>Fill up carefully regarding your card and financial information.</p>
+                        <div>
+                            <label for="cardname">Name on Card</label><br>
+                            <input type="text" id="cardname" placeholder="Name"><br><br>
+                            <label for="creditno">Credit card Number</label><br>
+                            <input type="text" id="creditno" placeholder="1111 2222 3333 4444"><br><br>
+                            <label for="exp-date">Exp Date</label><br>
+                            <input type="text" id="exp-date" placeholder="Card Expired Date xx/xx"><br><br>
+                            <label for="cvv">Card Verification Value</label><br>
+                            <input type="text" id="cvv" placeholder="3 digit code"><br><br>
+                            <button class="btn" onclick="alert('Order completed. Please wait for further notifications')">Proceed to Checkout</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+    <audio autoplay loop> <!--Background music-->
+        <source src="EarlybirdAudio.mp3" type="audio/mpeg">
+    </audio>
+        </main>
+
+        <footer> <!--Footer that using general CSS-->
+            <div class="social-media">
+                <p>Follow us on:</p>
+                <a href="https://twitter.com/OyeCafeIndia"><img src="logo/twitter.svg" alt="twitter icon"></a>
+                <a href="https://www.facebook.com/oye.cafe22/"><img src="logo/facebook.svg" alt="facebook icon"></a>
+                <a href="https://www.instagram.com/oyecafe/"><img src="logo/instagram.svg" alt="instagram icon"></a>
+            </div>
+            <p class="copyright">Copyright &copy; 2023 by Oye! Cafe Sdn Bhd. 24312314 (41244-X) All Rights Reserved.</p>
+            <p class="contact">Connect With Us!<br>
+                <a href='mailto:oyecafe@gmail.com'>oyecafe@gmail.com</a>
+                <br><a href="tel:011-12345678">(+60)11-12345678</a></p>
+        </footer>
+    </body>
+</html>

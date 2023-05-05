@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"> <!--meta-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Oye! Cafe- Contact Us</title> <!--Title of webpage-->
+        <!--Webpage icon link-->
+        <link rel="icon" href="logo/logo-black.png" type="image/png">
+        <!--google fonts link-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Anton&family=Comfortaa&family=Lato&family=Lobster&family=Pacifico&family=Permanent+Marker&display=swap" rel="stylesheet">
+        <!--CSS link-->
+        <link rel="stylesheet" href="general.css">
+        <style>
+            main {
+                padding:0;
+                margin: 0;
+                box-sizing: content-box;
+            }
+
+            .contact-intro {
+                text-align: center;     
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+            }
+
+            .contact-intro img {
+                position: relative;
+                width: 1470px;
+                height: 500px;
+                border: 5px white ;
+                border-style: dashed none;
+            }
+
+            .contact-intro div {
+                position: absolute;
+                padding: 20px 90px;
+                margin: 0 300px;
+                border: white  10px double;
+                background-color: rgba(81, 79, 79, 0.66);
+                color: antiquewhite;
+                font-size: 1.3em;
+            }
+
+            .container {
+                font-size: 1.2em;
+                font-family: Comfortaa, 'Courier New', Courier, monospace;
+                line-height: 30px;
+                margin: 50px auto;
+            }
+
+            .container h2 {
+                font-family: Pacifico;
+                font-size: 1.7em;
+                font-weight: 200;
+                color: darkslategrey;
+                text-align: center;
+                margin-top: 80px;
+            }
+
+            .container form {
+                text-align: center;
+                height: 850px;
+                width: 800px;
+                margin: auto;
+                display: flex;
+                flex-direction: column;
+                background-image: url(image/BGimage.jpg);
+                border: 5px dashed rgb(66, 103, 103);
+                padding: 20px;
+                text-transform: capitalize;
+                border-radius: 30px;
+            }
+
+            .container form input, textarea, .submit {
+                padding: 20px 60px;
+                border-radius: 20px;
+                margin: 5px 0px;
+                width: 350px;
+                border: none;
+                box-shadow: 4px 4px 3px 0 rgba(0,0,0,0.3);
+                cursor: pointer;
+                text-align: center;
+            }
+
+            .submit {
+                font-family: Pacifico,'Times New Roman', serif;
+                font-size: 1.3em;
+                background-color: antiquewhite;
+            }
+        </style>
+    </head>
+
+    <body>
+        <header> <!--Header and Navigation Bar using general CSS (apply to all webpages)-->
+            <a href="index.html"><img src="logo/banner-logo.png" alt="Logo of Oye! Cafe"></a>
+        </header>
+
+        <nav class="navbar">
+            <a href="index.html"><img src="logo/logo-black.png" alt="Logo"></a>
+            <a class="nav-word" href="aboutus.html">About Us</a>
+            <a class="nav-word" href="menu.html">Menu</a>
+            <a class="nav-word" href="services.html">Services</a>
+            <a class="nav-word active" href="contactus.html">Contact Us</a>
+        </nav>
+
+        <main>
+            <div class="contact-intro"> 
+                <img src="image/CoffeeMachine.jpg" alt="Coffee Machine">
+                <div>
+                    <h1 style="font-family: Lobster, 'Times New Roman', serif;">Contact Oye! Cafe</h1>
+                    <p>Feel free to leave any message and note here. We'll take into consideration every piece of messages or feedback left by our customers.</p>
+                </div>
+            </div>
+
+            <div class="container"> <!--Contact form-->
+                <h2>Message Form</h2>
+                <form>
+                    <p>Send us a message and we'll get back to you as soon as possible. Looking forward to hearing from you!</p>
+                    <div>
+                        <label for="name">Name</label><br>
+                        <input type="text" id="name" placeholder="Name" required><br><br>
+                        <label for="email">E-mail</label><br>
+                        <input type="email" id="email" placeholder="E-mail" required><br><br>
+                        <label for="phone"> Phone Number</label><br>
+                        <input type="tel" id="phone" placeholder="phone number" required><br><br>
+                        <label for="message">Your Message</label><br>
+                        <textarea name="Message" id="message" cols="20" rows="8" placeholder="Your message" required></textarea><br><br>
+                        <button class="submit" onclick="alert('We have received your message. Thanks for your feedback!')">Submit</button>
+                    </div>
+                </form>
+            </div>
+
+            <audio autoplay loop> <!--Background music-->
+                <source src="EarlybirdAudio.mp3" type="audio/mpeg">
+            </audio>
+        </main>
+        
+        <footer> <!--Footer that using general CSS-->
+            <div class="social-media">
+                <p>Follow us on:</p>
+                <a href="https://twitter.com/OyeCafeIndia"><img src="logo/twitter.svg" alt="twitter icon"></a>
+                <a href="https://www.facebook.com/oye.cafe22/"><img src="logo/facebook.svg" alt="facebook icon"></a>
+                <a href="https://www.instagram.com/oyecafe/"><img src="logo/instagram.svg" alt="instagram icon"></a>
+            </div>
+            <p class="copyright">Copyright &copy; 2023 by Oye! Cafe Sdn Bhd. 24312314 (41244-X) All Rights Reserved.</p>
+            <p class="contact">Connect With Us!<br>
+                <a href='mailto:oyecafe@gmail.com'>oyecafe@gmail.com</a>
+                <br><a href="tel:011-12345678">(+60)11-12345678</a></p>
+        </footer>
+    </body>
+</html>

@@ -1,0 +1,116 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-image: linear-gradient(#f3dbcf,#b2dce3,#c6c0e5);
+    background-repeat: no-repeat;
+    overflow-x: hidden;
+}
+
+header {
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+header img {
+    width: 400px;
+}
+
+.navbar {
+    background-color: #f6f3e7db;
+    display: flex;
+    flex-direction: row;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.navbar a {
+    color:saddlebrown;
+    font-size: 1.7em;
+    font-weight: bold;
+    font-family: Lato, 'Times New Roman', Times, serif;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.navbar a:hover {
+    background-color: blanchedalmond;
+    color: darkslategrey;
+    transition: 0.4s;
+}
+
+.navbar a:visited {
+    color: rgb(145, 118, 86);
+}
+
+.navbar .active {
+    background-color: #f0e2ce;
+    color: #46653b;
+}
+
+.nav-word {
+    padding: 35px 40px;
+    display: inline-flex;
+}
+
+.navbar img {
+    display: inline-block;
+    width: 130px;
+    height: 85px;
+    padding: 0 20px;
+}
+
+.button {
+    background: none;
+    cursor: pointer;
+    width: 150px;
+    height: 50px;
+    border: 3px solid #b0a89d;
+    font-size: 0.8em;
+    font-family: Pacifico, 'Times New Roman', Times, serif;
+    margin-top: 10px;
+}
+
+.button:hover {
+    background-color: #b0a89d;
+    transition-duration: 0.4s;
+    color: #fffef1;
+}
+
+footer{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: rgb(243, 234, 217);
+    margin-top: 200px;
+    padding: 10px 30px;
+    color: rgb(74, 96, 74);
+    font-family: Lato, Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    padding-bottom: 20px;
+}
+
+.social-media img{
+    width: 45px;
+    padding-inline-start: 10px;
+}
+
+.copyright{
+    text-align: center;
+    padding-top: 30px;
+}
+
+footer .contact {
+    line-height: 25px;
+    padding-right: 20px;
+}
+
+footer .contact a {
+    text-decoration: none;
+    color: saddlebrown;
+}

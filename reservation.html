@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"> <!--meta-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Oye! Cafe- Services</title> <!--Title of webpage-->
+        <!--Webpage icon link-->
+        <link rel="icon" href="logo/logo-black.png" type="image/png">
+        <!--google fonts link-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Anton&family=Comfortaa&family=Lato&family=Lobster&family=Pacifico&family=Permanent+Marker&display=swap" rel="stylesheet">
+        <!--CSS link-->
+        <link rel="stylesheet" href="general.css">
+        <style>
+            .reserve-intro {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                text-align: center;
+                border-bottom: 5px dashed #8f654b;
+            }
+
+            .reserve-intro img {
+                position: relative;
+                height: 500px;
+            }
+
+            .reserve-intro-text {
+                position: absolute;
+                color: antiquewhite;
+                font-size: 1.5em;
+                padding: 20px 53px;
+                margin: 0 470px;
+                border: 10px double white;
+                background-color: rgba(102, 101, 101, 0.444);
+            }
+
+            .container {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+            }
+
+            .reservation {
+                font-size: 1.2em;
+                font-family: Comfortaa, 'Courier New', Courier, monospace;
+                line-height: 30px;
+                margin: 120px 20px 0px 20px;
+            }
+
+            .reservation form h2 {
+                font-family: Pacifico;
+                font-size: 1.7em;
+                font-weight: 200;
+                color: rgb(64, 107, 107);
+                text-align: center;
+            }
+
+            .reservation form {
+                text-align: center;
+                width: 650px;
+                display: flex;
+                flex-direction:column;
+                background-image: url(image/BGimage.jpg);
+                border: 5px dashed rgb(66, 103, 103);
+                padding: 20px 20px 60px 20px;
+                text-transform: capitalize;
+                border-radius: 30px;
+            }
+
+            .reservation form input {
+                padding: 20px 60px;
+                border-radius: 20px;
+                border: none;
+                margin: 5px 0 5px 0px;
+                width: 350px;
+                box-shadow: 4px 4px 3px 0 rgba(0,0,0,0.3);
+                cursor: pointer;
+                text-align: center;
+            }
+
+            .reservation form select {
+                width: 200px;
+                padding: 20px 60px;
+                border-radius: 20px;
+                border: none;
+                box-shadow: 4px 4px 3px 0 rgba(0,0,0,0.3);
+            }
+
+            .btn {
+                margin-top: 20px;
+                font-family: Pacifico,'Times New Roman', serif;
+                font-size: 1.3em;
+                background-color: antiquewhite;
+                padding: 20px 60px;
+                border: none;
+                border-radius: 20px;
+                box-shadow: 4px 4px 3px 0 rgba(0,0,0,0.3);
+            }
+
+            .info {
+                text-align: center;             
+                background-image: url(image/BGimage.jpg);
+                border: 5px dashed rgb(66, 103, 103);
+                border-radius: 20px;
+                padding: 20px;
+                margin: 120px 40px 0px 40px;
+                width: 500px;
+                height: 970px;
+            }
+            
+            .info img {
+                border: 2px solid white;
+            }
+            
+            .info h2 {
+                font-family: Pacifico;
+                font-size: 1.7em;
+                font-weight: 200;
+                color: rgb(64, 107, 107);
+                text-align: center;
+            }
+
+            .info dl {
+                color: #4b6b3b;
+                font-size: 1.2em;
+                font-family: Comfortaa, 'Courier New', Courier, monospace;
+                line-height: 60px;
+            }
+
+            .info dl dt {
+                font-weight: bold;
+            }       
+        </style>
+    </head>
+
+    <body>
+        <header> <!--Header and Navigation Bar using general CSS (apply to all webpages)-->
+            <a href="index.html"><img src="logo/banner-logo.png" alt="Logo of Oye! Cafe"></a>
+        </header>
+
+        <nav class="navbar">
+            <a href="index.html"><img src="logo/logo-black.png" alt="Logo"></a>
+            <a class="nav-word" href="aboutus.html">About Us</a>
+            <a class="nav-word" href="menu.html">Menu</a>
+            <a class="nav-word" href="services.html">Services</a>
+            <a class="nav-word" href="contactus.html">Contact Us</a>
+        </nav>
+
+        <main>
+            <div class="reserve-intro">
+                <img src="image/CafeSeats.png" alt="Cafe seats">
+                <div class="reserve-intro-text">
+                    <h1>Online Reservation</h1> 
+                </div>
+            </div>
+
+            <div class="container"> 
+                <div class="reservation"> <!--Reservation section-->
+                    <form>
+                        <h2>Reservation Form</h2> <!--Reservation form-->
+                        <p>Please fill up the following field with your information correctly. Thanks for your coorperation.</p>
+                        <div>
+                            <label for="name">Name</label><br>
+                            <input type="text" id="name" placeholder="Your Name"><br><br>
+                            <label for="email">Email</label><br>
+                            <input type="email" id="email" placeholder="Your Email"><br><br>
+                            <label for="date">Date</label><br>
+                            <input type="date" id="date"><br><br>
+                            <label for="time">Time</label><br>
+                            <input type="time" id="time"><br><br>
+                            <label for="pax">Number of Pax &nbsp;</label>
+                            <select id="pax" name="pax">
+                                <option value="1">1 Person</option>
+                                <option value="2">2 People</option>
+                                <option value="3">3 People</option>
+                                <option value="4">4 People</option>
+                                <option value="5">5 People</option>
+                                <option value="6">6 People</option>
+                            </select><br><br>
+                            <button class="btn" onclick="alert('Thanks for your reservation! Please check your email to confirm your date and time.')">Submit</button>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="info"> <!--Information section-->
+                    <h2>Hours and Location</h2>
+                    <a href="https://goo.gl/maps/QJwNX7pko4XexV7d8"><img src="image/address.png" alt="Address of Oye!cafe" height="250" width="450"></a>
+                    <h2>Hours of Operation</h2>
+                    <dl>
+                        <dt>Monday-Friday</dt>
+                        <dd>8am-10pm</dd>
+                        <dt>Saturday and Sunday</dt>
+                        <dd>8am-11pm</dd>
+                        <dt>Call us: <a href="tel:011-12345678">(+60)11-12345678</a></dt>
+                        <dd>For on-call reservation or more information.</dd>
+                    </dl>
+                </div>
+            </div>
+
+            <audio autoplay loop> <!--Background music-->
+                <source src="EarlybirdAudio.mp3" type="audio/mpeg">
+            </audio>
+        </main>
+
+        <footer> <!--Footer that using general CSS-->
+            <div class="social-media">
+                <p>Follow us on:</p>
+                <a href="https://twitter.com/OyeCafeIndia"><img src="logo/twitter.svg" alt="twitter icon"></a>
+                <a href="https://www.facebook.com/oye.cafe22/"><img src="logo/facebook.svg" alt="facebook icon"></a>
+                <a href="https://www.instagram.com/oyecafe/"><img src="logo/instagram.svg" alt="instagram icon"></a>
+            </div>
+            <p class="copyright">Copyright &copy; 2023 by Oye! Cafe Sdn Bhd. 24312314 (41244-X) All Rights Reserved.</p>
+            <p class="contact">Connect With Us!<br>
+                <a href='mailto:oyecafe@gmail.com'>oyecafe@gmail.com</a>
+                <br><a href="tel:011-12345678">(+60)11-12345678</a></p>
+        </footer>
+    </body>
+</html>

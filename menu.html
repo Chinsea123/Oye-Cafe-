@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"> <!--meta-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Oye! Cafe- Menu</title> <!--Title of webpage-->
+        <!--Webpage icon link-->
+        <link rel="icon" href="logo/logo-black.png" type="image/png">
+        <!--google fonts link-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Anton&family=Comfortaa&family=Lato&family=Lobster&family=Pacifico&family=Permanent+Marker&display=swap" rel="stylesheet">
+        <!--CSS link-->
+        <link rel="stylesheet" href="general.css">
+        <style>
+            .menu-nav {
+                position: sticky;
+                background-color:#d3cece;
+                display: flex;
+                flex-direction: row;
+                top: 103px;
+            }
+
+            .menu-nav a {
+                margin: 10px 30px;
+                font-size: 1.5em;
+                font-family: Permanent Marker, Verdana, sans-serif;
+                color: #5d4037;
+                text-decoration: none;
+            }
+
+            .menu-nav a:hover {
+                color: #b19186;
+                transition: 0.3s;
+            }
+
+            .menu-intro {
+                text-align: center;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+            }
+
+            .menu-intro img {
+                position: relative;
+                width: 1470px;
+                height: 500px;
+                z-index: -1;
+            }
+
+            .menu-intro-text {
+                position: absolute;
+                padding: 20px 90px;
+                margin: 0 470px;
+                border: 10px double white;
+                background-color: rgba(102, 101, 101, 0.699);
+                color: antiquewhite;
+                font-size: 2.0em;
+                font-family: Comfortaa, 'Times New Roman', Times, serif;
+                text-shadow: 5px 5px 4px rgba(255, 255, 255, 0.49);
+                z-index: -1;
+            }
+
+            .menu-category {
+                padding: 80px 30px;
+            }
+
+            .menu-container{
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+                column-gap: 25px;
+                row-gap: 25px;
+            }
+
+            .menu-items {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                text-align: center;
+                border: 5px ridge white;
+            }
+
+            .menu-items img {
+                width: 400px;
+                margin: 20px;
+                border: 3px solid black;
+                border-radius: 6px;
+            }
+
+            .menu-items h2 {
+                font-family: Comfortaa, 'Times New Roman', serif;
+            }
+
+            .menu-items p {
+                font-family: 'Courier New', Courier, monospace;
+                width: 400px;
+                margin: 20px;
+            }
+
+            .price {
+                font-weight: bold;
+                font-size: 1.2em;
+                color: saddlebrown;
+            }
+        </style>
+    </head>
+
+    <body>
+        <header> <!--Header and Navigation Bar using general CSS (apply to all webpages)-->
+            <a href="index.html"><img src="logo/banner-logo.png" alt="Logo of Oye! Cafe"></a>
+        </header>
+
+        <nav class="navbar">
+            <a href="index.html"><img src="logo/logo-black.png" alt="Logo"></a>
+            <a class="nav-word" href="aboutus.html">About Us</a>
+            <a class="nav-word active" href="menu.html">Menu</a>
+            <a class="nav-word" href="services.html">Services</a>
+            <a class="nav-word" href="contactus.html">Contact Us</a>
+        </nav>
+
+        <nav class="menu-nav"> <!--Hotspot for different category of menu on same page-->
+            <a href="#breakfast">Breakfast</a>
+            <a href="#salad">Salad</a>
+            <a href="#toast">Toast</a> 
+            <a href="#pasta">Pasta</a> 
+            <a href="#western">Western</a>
+            <a href="#sides">Sides</a> 
+            <a href="#dessert">Dessert</a> 
+            <a href="#drinks">Drinks</a>
+        </nav>
+        <div class="menu-intro"> 
+            <img src="image/tablefood.jpg" alt="Table Food">
+            <div class="menu-intro-text">
+                <h1>Oye! Cafe Menu</h1>
+            </div>
+        </div>
+        <main> 
+            
+            <div id="breakfast" class="menu-category"> <!--Breakfast section-->
+                <h1 style="font-family: Lobster, 'Times New Roman', serif;">Breakfast</h1>
+                <div class="menu-container"> <!--Contains different food items-->
+                    <div class="menu-items"> <!--Contains information of each food item-->
+                        <img src="menuImage/BigBreakfast.jpg" alt="Big Breakfast">
+                        <h2>Big Breakfast</h2>
+                        <p>Egg, hashbrown, sausage, mushroom, baked beans, bacon, tomato</p>
+                        <p class="price">RM 15</p>
+                    </div>
+                    <div class="menu-items">
+                        <img src="menuImage/BlueberryPancake.jpg" alt="Bluberry Pancake">
+                        <h2>Blueberry Pancake</h2>
+                        <p>Flour, egg, milk, vanilla extract, blueberry, honey, greek yogurt</p>
+                        <p class="price">RM 12</p>
+                    </div>
+                    <div class="menu-items">
+                        <img src="menuImage/BreakfastPancake.jpg" alt="Breakfast Pancake">
+                        <h2>Breakfast Pancake</h2>
+                        <p>Flour, egg, milk, vanilla extract, sausage, bacon</p>
+                        <p class="price">RM 13</p>
+                    </div>
+                    <div class="menu-items">
+                        <img src="menuImage/ClassicPancake.jpg" alt="Classic Pancake">
+                        <h2>Classic Pancake</h2>
+                        <p>Flour, egg, milk, vanilla extract, butter, honey</p>
+                        <p class="price">RM 8</p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="salad" class="menu-category"> <!--Salad section-->
+                <h1 style="font-family: Lobster, 'Times New Roman', serif;">Salad</h1>
+                <div class="menu-container">
+                    <div class="menu-items">
+                        <img src="menuImage/FruitSalad.png" alt="Fruit salad">
+                        <h2>Fruit salad</h2>
+                        <p>strawberry, tangerine, kiwi, blueberry, grape, lime juice</p>
+                        <p class="price">RM 13</p>
+                    </div>
+                    <div class="menu-items">
+                        <img src="menuImage/ChickenCaesarSalad.png" alt="Chicken Caesar Salad">
+                        <h2>Chicken Caesar Salad</h2>
+                        <p>chicken breast, lettuce, mayonnaise, pepper, parmesan cheese</p>
+                        <p class="price">RM 16</p>
+                    </div>
+                    <div class="menu-items">
+                        <img src="menuImage/PotatoSalad.png" alt="Potato Salad">
+                        <h2>Potato Salad</h2>
+                        <p>potato, Egg, Onion, dill, sour cream, pepper</p>
+                        <p class="price">RM 13</p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="toast" class="menu-category"> <!--Toast section-->
+                <h1 style="font-family: Lobster, 'Times New Roman', serif;">Toast</h1>
+                <div class="menu-container">
+                    <div class="menu-items">
+                        <img src="menuImage/AvocadoToast.png" alt="Avocado Toast">
+                        <h2>Avocado Toast</h2>
+                        <p>Wholegrain bread, butter, avocado, egg, pepper</p>
+                        <p class="price">RM 12</p>
+                    </div>
+                    <div class="menu-items">
+                        <img src="menuImage/ScrambleEggToast.png" alt="Scramble Egg Toast">
+                        <h2>Scramble Egg Toast</h2>
+                        <p>Wholegrain bread, butter, egg, cheese, parsley</p>
+                        <p class="price">RM 9</p>
+                    </div>
+                    <div class="menu-items">
+                        <img src="menuImage/MushroomToast.png" alt="Mushroom Toast">
+                        <h2>Mushroom Toast</h2>
+                        <p>Wholegrain bread, butter, white button mushroom, ghee</p>
+                        <p class="price">RM 13</p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="pasta" class="menu-category"> <!--Pasta section-->
+                <h1 style="font-family: Lobster, 'Times New Roman', serif;">Pasta</h1>
+                <div class="menu-container">
+                    <div class="menu-items">
+                        <img src="menuImage/ChickenAlfredo.png" alt="Chicken Alfredo">
+                        <h2>Chicken Alfredo</h2>
+                        <p>Chiken breast, fettucine, alfredo sauce, butter, garlic, parmesan cheese, black pepper, parsley</p>
+                        <p class="price">RM 20</p>
+                    </div>
+                    <div class="menu-items">
+                        <img src="menuImage/BeefBolognese.png" alt="Beef Bolognese">
+                        <h2>Beef Bolognese</h2>
+                        <p>Beef mince, spaghetti, bolognese sauce, tomato, onion, parmesan cheese</p>
+                        <p class="price">RM 25</p>
+                    </div>
+                    <div class="menu-items">
+                        <img src="menuImage/ShrimpPasta.png" alt="Shrimp Pasta">
+                        <h2>Shrimp Pasta</h2>
+                        <p>Shrimp, pasta, heavy cream, tomato, onion, butter, garlic, pepper, basil, chilli flakes, parmesan</p>
+                        <p class="price">RM 23</p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="western" class="menu-category"> <!--Western section-->
+                <h1 style="font-family: Lobster, 'Times New Roman', serif;">Western</h1>
+                <div class="menu-container">
+                    <div class="menu-items">
+                        <img src="menuImage/CaribbeanStyleFishFillet.png" alt="Caribbean Style Fish Fillet">
+                        <h2>Caribbean Style Fish Fillet</h2>
+                        <p>Fish fillet, potato wedges, butter sauce, lemon plum dressing, lime wedge, japanese cucumber, romaine lettuce, cherry tomato, shredded carrot, lemon plum dressing</p>
+                        <p class="price">RM 23</p>
+                    </div>
+                    <div class="menu-items">
+                        <img src="menuImage/FishandChips.png" alt="Fish and Chips">
+                        <h2>Fish and Chips</h2>
+                        <p>Fish fillet, french fries, tartar sauce, lemon plum dressing, lemon, cherry tomato, romaine lettuce</p>
+                        <p class="price">RM 23</p>
+                    </div>
+                    <div class="menu-items">
+                        <img src="menuImage/PanGrilledLobster.png" alt="Pan-Grilled Lobster">
+                        <h2>Pan-Grilled Lobster</h2>
+                        <p>Fish fillet, french fries, lobster sauce, black pepper, romaine lettuce, japanese cucumber, cherry tomato, shredded carrot, lemon plum dressing</p>
+                        <p class="price">RM 28</p>
+                    </div>
+                    <div class="menu-items">
+                        <img src="menuImage/ButtermilkChickenChop.png" alt="Buttermilk Chicken Chop">
+                        <h2>Buttermilk Chicken Chop</h2>
+                        <p>Chicken, potato wedges, buttermilk sauce, romain lettuce, japanese cucumber, shredded carrot, cherry tomato</p>
+                        <p class="price">RM 25</p>
+                    </div>
+                    <div class="menu-items">
+                        <img src="menuImage/GrilledBlackPepperChicken.png" alt="Grilled Black Pepper Chicken">
+                        <h2>Grilled Black Pepper Chicken</h2>
+                        <p>Butter herb rice, grilled chicken, black pepper sauce, romaine lettuce, japanese cucumber, cherry tomato, shredded carrot, lemon plum dressing</p>
+                        <p class="price">RM 25</p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="sides" class="menu-category"> <!--Sides section-->
+                <h1 style="font-family: Lobster, 'Times New Roman', serif;">Sides</h1>
+                <div class="menu-container">
+                    <div class="menu-items">
+                        <img src="menuImage/MushroomSoup.png" alt="Mushroom Soup">
+                        <h2>Mushroom Soup</h2>
+                        <p>crimini mushroom, heavy cream, garlic, pepper, thyme</p>
+                        <p class="price">RM 5</p>
+                    </div>
+                    <div class="menu-items">
+                        <img src="menuImage/PumpkinSoup.png" alt="Pumpkin Soup">
+                        <h2>Pumpkin Soup</h2>
+                        <p>Pumpkin, onion, garlic, vegetables stock, black pepper, parsley</p>
+                        <p class="price">RM 5</p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="dessert" class="menu-category"> <!--Dessert section-->
+                <h1 style="font-family: Lobster, 'Times New Roman', serif;">Dessert</h1>
+                <div class="menu-container">
+                    <div class="menu-items">
+                        <img src="menuImage/Brownies.png" alt="Brownies">
+                        <h2>Brownies</h2>
+                        <p>Cake flour, cocoa powder, Egg, dark chocolate, sugar, butter, sea salt</p>
+                        <p class="price">RM 9</p>
+                    </div>
+                    <div class="menu-items">
+                        <img src="menuImage/Tiramisu.png" alt="Tiramisu ">
+                        <h2>Tiramisu</h2>
+                        <p>Brewed coffee, coffee liqueur, cream cheese, finger biscuits, milk, sugar, cocoa powder, vanilla extract</p>
+                        <p class="price">RM 12</p>
+                    </div>
+                    <div class="menu-items">
+                        <img src="menuImage/MatchaLayerCake.png" alt="Matcha Layer Cake">
+                        <h2>Matcha Layer Cake</h2>
+                        <p>cake flour, matcha powder, egg, sugar,butter, whipped cream, milk</p>
+                        <p class="price">RM 16</p>
+                    </div>
+                    <div class="menu-items">
+                        <img src="menuImage/StrawberryShortcake.png" alt="Strawberry Shortcake">
+                        <h2>Strawberry Shortcake</h2>
+                        <p>cake flour, strawberry, egg, sugar, butter, whipped cream, vanilla extract</p>
+                        <p class="price">RM 15</p>
+                    </div>
+                    <div class="menu-items">
+                        <img src="menuImage/MangoShortcake.png" alt="Mango Shortcake">
+                        <h2>Mango Shortcake</h2>
+                        <p>cake flour, mango, egg, sugar, butter, whipped cream, vanilla extract</p>
+                        <p class="price">RM 15</p>
+                    </div>
+                    <div class="menu-items">
+                        <img src="menuImage/BerryCheesecake.png" alt="Berry Cheesecake">
+                        <h2>Berry Cheesecake</h2>
+                        <p>Berries, cream cheese, egg, lemon juice, lemon zest, Graham cracker, butter, sugar, vanilla extract</p>
+                        <p class="price">RM 18</p>
+                    </div>
+                    <div class="menu-items">
+                        <img src="menuImage/AppleCrumblePie.png" alt="Apple Crumble Pie">
+                        <h2>Apple Crumble Pie</h2>
+                        <p>Flour, cinnamon, apple,sugar, butter, salt, lemon juice</p>
+                        <p class="price">RM 13</p>
+                    </div>
+                    <div class="menu-items">
+                        <img src="menuImage/ChocolatePie.png" alt="Chocolate Pie">
+                        <h2>Chocolate Pie</h2>
+                        <p>Flour, cocoa powder, dark chocolate, butter, egg, sugar, vanilla extract</p>
+                        <p class="price">RM 12</p>
+                    </div>
+                    <div class="menu-items">
+                        <img src="menuImage/LemonPie.png" alt="Lemon Pie">
+                        <h2>Lemon Pie</h2>
+                        <p>Graham cracker, lemon,egg, butter, sugar, whipped cream, vanilla extract</p>
+                        <p class="price">RM 12</p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="drinks" class="menu-category"> <!--Drinks section-->
+                <h1 style="font-family: Lobster, 'Times New Roman', serif;">Drinks</h1>
+                <div class="menu-container">
+                    <div class="menu-items">
+                        <img src="menuImage/IcedAmericano.png" alt="Iced Americano">
+                        <h2>Iced Americano</h2>
+                        <p>Double-shot espresso, cold water</p>
+                        <p class="price">RM 8</p>
+                    </div>
+                    <div class="menu-items">
+                        <img src="menuImage/CinnamonCaramelColdBrew.png" alt="Cinnamon Caramel Cold Brew">
+                        <h2>Cinnamon Caramel Cold Brew</h2>
+                        <p> Cinnamon caramel syrup, cinnamon dolce sprinkles, cinnamon sweet cream foam, espresso shot, cold water</p>
+                        <p class="price">RM 13</p>
+                    </div>
+                    <div class="menu-items">
+                        <img src="menuImage/ChocolateCreamColdBrew.png" alt="Chocolate Cream Cold Brew">
+                        <h2>Chocolate Cream Cold Brew</h2>
+                        <p> Vanilla syrup, chocolate cream foam, espresso shot, cold water</p>
+                        <p class="price">RM 13</p>
+                    </div>
+                    <div class="menu-items">
+                        <img src="menuImage/IcedVanillaOatmilk.png" alt="Iced Toasted Vanilla Oatmilk Shaken Espresso">
+                        <h2>Iced Toasted Vanilla Oatmilk Shaken Espresso</h2>
+                        <p> Oat milk, toasted vanilla syrup, espresso shot, cold water</p>
+                        <p class="price">RM 12</p>
+                    </div>
+                    <div class="menu-items">
+                        <img src="menuImage/IcedHazelnutLatte.png" alt="Iced Hazelnut Bianco Latte">
+                        <h2>Iced Hazelnut Bianco Latte</h2>
+                        <p> Hazelnut syrup, milk, espresso shot, cold water</p>
+                        <p class="price">RM 12</p>
+                    </div>
+                    <div class="menu-items">
+                        <img src="menuImage/IcedCaramelMacchiato.png" alt="Iced Caramel Macchiato">
+                        <h2>Iced Caramel Macchiato</h2>
+                        <p> Vanilla syrup, caramel drizzle, signature espresso roast, milk, cold water</p>
+                        <p class="price">RM 13</p>
+                    </div>
+                    <div class="menu-items">
+                        <img src="menuImage/IcedWhiteChocolateMocha.png" alt="Iced White Chocolate Mocha">
+                        <h2>Iced White Chocolate Mocha</h2>
+                        <p>White chocolate mocha sauce, whipped cream, signature espresso roast, milk, cold water</p>
+                        <p class="price">RM 12</p>
+                    </div>
+                    <div class="menu-items">
+                        <img src="menuImage/CaramelFrappuccino.png" alt="Caramel Crunch Frappuccino">
+                        <h2>Caramel Crunch Frappuccino</h2>
+                        <p>Whole milk, espresso shot, caramel sauce, whipped cream, caramel crunch topping, sugar syrup, cold water</p>
+                        <p class="price">RM 14</p>
+                    </div>
+                    <div class="menu-items">
+                        <img src="menuImage/IcedBlackTea.png" alt="Iced Black Tea">
+                        <h2>Iced Black Tea</h2>
+                        <p> Black tea, sugar syrup, cold water</p>
+                        <p class="price">RM 8</p>
+                    </div>
+                    <div class="menu-items">
+                        <img src="menuImage/EnglishTeaLatte.png" alt="Iced Royal English Breakfast Tea">
+                        <h2>Iced Royal English Breakfast Tea</h2>
+                        <p>English tea, milk, liquid cane sugar, cold water</p>
+                        <p class="price">RM 9</p>
+                    </div>
+                    <div class="menu-items">
+                        <img src="menuImage/GreenTeaLemonade.png" alt="Iced Green Tea Lemonade">
+                        <h2>Iced Green Tea Lemonade</h2>
+                        <p>Lemonade Juice, Green Tea, Sugar Syrup, Cold water</p>
+                        <p class="price">RM 12</p>
+                    </div>
+                    <div class="menu-items">
+                        <img src="menuImage/MatchaTeaLatte.png" alt="Iced Matcha Tea Latte">
+                        <h2>Iced Matcha Tea Latte</h2>
+                        <p> Oat milk, toasted vanilla syrup, espresso shot, cold water</p>
+                        <p class="price">RM 13</p>
+                    </div> 
+                    <div class="menu-items">
+                        <img src="menuImage/PeachGreenTea.png" alt="Iced Peach Green Tea">
+                        <h2>Iced Peach Green Tea</h2>
+                        <p>Peach juice blend, green tea, sugar syrup, cold water</p>
+                        <p class="price">RM 12</p>
+                    </div>
+                    <div class="menu-items">
+                        <img src="menuImage/PassionTea.png" alt="Iced Passion Tea ">
+                        <h2>Iced Passion Tea </h2>
+                        <p>Passion fruit juice, green tea, sugar syrup, cold water</p>
+                        <p class="price">RM 12</p>
+                    </div>
+                    <div class="menu-items">
+                        <img src="menuImage/PistachioFrappuccino.png" alt="Pistachio Crème Frappuccino">
+                        <h2>Pistachio Crème Frappuccino</h2>
+                        <p>Whole milk, espresso shot, salted brown butter topping, whipped cream, tea, cold water</p>
+                        <p class="price">RM 14</p>
+                    </div>
+                </div>
+            </div>
+        
+            <audio autoplay loop> <!--Background music-->
+                <source src="EarlybirdAudio.mp3" type="audio/mpeg">
+            </audio>
+        </main>
+
+        <footer> <!--Footer that using general CSS-->
+            <div class="social-media">
+                <p>Follow us on:</p>
+                <a href="https://twitter.com/OyeCafeIndia"><img src="logo/twitter.svg" alt="twitter icon"></a>
+                <a href="https://www.facebook.com/oye.cafe22/"><img src="logo/facebook.svg" alt="facebook icon"></a>
+                <a href="https://www.instagram.com/oyecafe/"><img src="logo/instagram.svg" alt="instagram icon"></a>
+            </div>
+            <p class="copyright">Copyright &copy; 2023 by Oye! Cafe Sdn Bhd. 24312314 (41244-X) All Rights Reserved.</p>
+            <p class="contact">Connect With Us!<br>
+                <a href='mailto:oyecafe@gmail.com'>oyecafe@gmail.com</a>
+                <br><a href="tel:011-12345678">(+60)11-12345678</a></p>
+        </footer>
+    </body>
+</html>

@@ -63,6 +63,18 @@ http://localhost:5000
 - Click the **"Connect Wallet"** button to link your MetaMask wallet.
 - Ensure MetaMask is installed and logged in.
 
+### Add Custom Network:
+
+To use the Gochain network, configure Metamask as follows:
+
+1. Open Metamask and go to **Settings** > **Networks** > **Add Network**.
+2. Enter the following details:
+   - **Network Name**: Gochain
+   - **UR;**:`http://127.0.0.1:8545`
+   - **Chain ID** :`31337`
+   - **Symbol** :GO
+3. Save the network settings.
+
 ### Schedule a Delivery
 
 1. Enter pickup and delivery locations.
@@ -122,5 +134,10 @@ project/
 - Improve UI/UX with loading indicators.
 - Enhanced error handling for better user feedback.
 - Distance count automatically for the system. 
+
+
+
+
+
 
 
